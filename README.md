@@ -129,6 +129,9 @@ MESインタフェースユニットは，情報連携機能がジョブ設定�
 MESインタフェースユニットの各ステータス，稼動ログの確認や，MESインタフェースユニットの停止，再開の各種操作を行うことができます。
 情報連携機能設定ツールは，MESインタフェースユニット1台分の情報連携機能の設定を1つのプロジェクトとして扱います。
 
+[MELSEC iQ-R MESインタフェースユニットユーザーズマニュアル(スタートアップ編).pdf](https://github.com/taaaakeeen/MELSEC_iQ-R_MES_Interface_Module/blob/main/doc/MELSEC%20iQ-R%20MES%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB(%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E7%B7%A8).pdf)
+[MELSEC iQ-R MESインタフェースユニットユーザーズマニュアル(応用編).pdf](https://github.com/taaaakeeen/MELSEC_iQ-R_MES_Interface_Module/blob/main/doc/MELSEC%20iQ-R%20MES%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB(%E5%BF%9C%E7%94%A8%E7%B7%A8).pdf)
+
 ## ファイル構成
 以下のCSVファイルによって設定が構成されています
 
@@ -196,6 +199,8 @@ project
 # 3. mes_parser
 CSVのプロジェクトファイルをJSONに変換出力します。  
 トラブル等でMES側の設定を確認したい状況での使用を想定しています。
+
+[mes_parser.exe](https://github.com/taaaakeeen/MELSEC_iQ-R_MES_Interface_Module/blob/main/dist/mes_parser.exe)
 
 ## JSON仕様
 以下のKey構造で構成されています
