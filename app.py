@@ -4,6 +4,7 @@ import os
 import sys
 import time
 import mes_parser
+import app_icon
 import logging
 import traceback
 # ------------------------------------------------------------------------
@@ -174,7 +175,7 @@ class Application(tk.Frame):
 
 def main():
     root = tk.Tk()
-    # root.iconbitmap("zo-san.ico")
+    root.iconphoto(False, app_icon.get_photo_image4icon())
     app = Application(master=root)
     app.mainloop()
 

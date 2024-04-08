@@ -1,1 +1,2 @@
-pyinstaller app.py --name mes_parser.exe --onefile --icon=data/mes_parser.ico --noconsole
+pyinstaller app.py --name mes_parser.exe --onefile --icon=mes_parser.ico --noconsole
+
