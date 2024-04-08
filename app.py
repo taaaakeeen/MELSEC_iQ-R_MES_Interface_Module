@@ -175,7 +175,7 @@ class Application(tk.Frame):
 
 def main():
     root = tk.Tk()
-    root.iconphoto(False, app_icon.get_photo_image4icon())
+    root.iconphoto(False, app_icon.get_data())
     app = Application(master=root)
     app.mainloop()
 
