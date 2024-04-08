@@ -1,0 +1,9 @@
+2024-04-08 16:47:17 json変換開始: C:/Users/tken1/OneDrive/デスクトップ/work/MELSEC_iQ-R_MES_Interface_Module/data/csv/sample_01
+2024-04-08 16:47:17 json変換完了: C:\Users\tken1\OneDrive\デスクトップ\work\MELSEC_iQ-R_MES_Interface_Module\dist\output\sample_01.json
+2024-04-08 16:59:57 json変換開始: C:/Users/tken1/OneDrive/デスクトップ/work/MELSEC_iQ-R_MES_Interface_Module/data/csv
+2024-04-08 16:59:57 An error occurred: [Errno 2] No such file or directory: 'C:/Users/tken1/OneDrive/デスクトップ/work/MELSEC_iQ-R_MES_Interface_Module/data/csv\\PROJECT.CSV'
+Traceback (most recent call last):
+  File "app.py", line 94, in run
+  File "mes_parser.py", line 116, in get_project_param
+  File "mes_parser.py", line 45, in read_csv
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/Users/tken1/OneDrive/デスクトップ/work/MELSEC_iQ-R_MES_Interface_Module/data/csv\\PROJECT.CSV'
