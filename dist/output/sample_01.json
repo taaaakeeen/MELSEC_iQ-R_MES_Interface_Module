@@ -1,0 +1,917 @@
+{
+    "PROJECT": {
+        "PROJECT_NAME": "hoge",
+        "COMMENT": "hoge to piyo and fuga",
+        "CSV_FORMAT_VERSION": 3
+    },
+    "NETWORK": {
+        "CH1": {
+            "USE_CH1": "ENABLE",
+            "IP_ADDRESS": "192.168.0.1",
+            "SUBNET_MASK": "255.255.255.0"
+        },
+        "CH2": {
+            "USE_CH2": "ENABLE",
+            "IP_ADDRESS": "192.168.0.2",
+            "SUBNET_MASK": "255.255.255.0"
+        },
+        "DEFAULT_GATEWAY": "192.168.0.254",
+        "HOST_NAME": "RD81MES96"
+    },
+    "TARGET_DEVICE": [
+        {
+            "TARGET_DEVICE_NUM": 1,
+            "TARGET_DEVICE_NAME": "ControlCPU",
+            "COMMENT": "",
+            "DEVICE_TYPE": "RCPU",
+            "MULTIPLE_CPU": "NO",
+            "SINGLE_NETWORK": "DISABLE",
+            "SOURCE_MODULE_TYPE": "",
+            "SOURCE_ROUTE": "",
+            "SOURCE_START_IO_NUM": "",
+            "SOURCE_STATION_NUM": "",
+            "ROUTED_IP_ADDRESS": "",
+            "ROUTED_MODULE_TYPE": "",
+            "ROUTED_NETWORK_NUM": "",
+            "ROUTED_STATION_NUM": "",
+            "TARGET_MODULE_TYPE": "",
+            "TARGET_IP_ADDRESS": "",
+            "TARGET_NETWORK_NUM": "",
+            "TARGET_STATION_NUM": "",
+            "DIFFERENT_NETWORK": "DISABLE",
+            "RELAY_MODULE_TYPE": "",
+            "RELAY_START_IO_NUM": "",
+            "CO-EX_NETWORK_NUM": "",
+            "CO-EX_STATION_NUM": "",
+            "GLOBAL_LABEL_SETTING": "DISABLE",
+            "GLOBAL_LABEL_PATH_SETTING": ""
+        }
+    ],
+    "DEVICE_TAG": [
+        {
+            "TAG_NUM": 1,
+            "TAG_NAME": "hoge",
+            "COMMENT": "err hoge",
+            "PROTECT_DATA_WRITING": "DISABLE",
+            "ARRAY_TAG_SETTING": "DISABLE",
+            "ARRAY_SIZE": "",
+            "ARRAY_TYPE": "",
+            "SPECIFY_BLOCK_SIZE": "",
+            "ARRAY_BLOCK_SIZE": ""
+        },
+        {
+            "TAG_NUM": 2,
+            "TAG_NAME": "piyo",
+            "COMMENT": "insert piyo",
+            "PROTECT_DATA_WRITING": "DISABLE",
+            "ARRAY_TAG_SETTING": "DISABLE",
+            "ARRAY_SIZE": "",
+            "ARRAY_TYPE": "",
+            "SPECIFY_BLOCK_SIZE": "",
+            "ARRAY_BLOCK_SIZE": ""
+        },
+        {
+            "TAG_NUM": 3,
+            "TAG_NAME": "fuga",
+            "COMMENT": "select fuga",
+            "PROTECT_DATA_WRITING": "DISABLE",
+            "ARRAY_TAG_SETTING": "DISABLE",
+            "ARRAY_SIZE": "",
+            "ARRAY_TYPE": "",
+            "SPECIFY_BLOCK_SIZE": "",
+            "ARRAY_BLOCK_SIZE": ""
+        }
+    ],
+    "DEVICE_TAG_COMPONENT": [
+        [
+            {
+                "TAG_NUM": 1,
+                "COMPONENT_NUM": 1,
+                "COMPONENT_NAME": "err_hoge",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "BIT",
+                "LENGTH": "",
+                "GLOBAL_LABEL": ""
+            }
+        ],
+        [
+            {
+                "TAG_NUM": 2,
+                "COMPONENT_NUM": 1,
+                "COMPONENT_NAME": "piyo_please",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "BIT",
+                "LENGTH": "",
+                "GLOBAL_LABEL": ""
+            },
+            {
+                "TAG_NUM": 2,
+                "COMPONENT_NUM": 2,
+                "COMPONENT_NAME": "piyo_send_ok",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "BIT",
+                "LENGTH": "",
+                "GLOBAL_LABEL": ""
+            },
+            {
+                "TAG_NUM": 2,
+                "COMPONENT_NUM": 3,
+                "COMPONENT_NAME": "piyo_send_ng",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "BIT",
+                "LENGTH": "",
+                "GLOBAL_LABEL": ""
+            },
+            {
+                "TAG_NUM": 2,
+                "COMPONENT_NUM": 4,
+                "COMPONENT_NAME": "piyo_id",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "SJIS",
+                "LENGTH": 8,
+                "GLOBAL_LABEL": ""
+            },
+            {
+                "TAG_NUM": 2,
+                "COMPONENT_NUM": 5,
+                "COMPONENT_NAME": "piyo_status",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "SJIS",
+                "LENGTH": 4,
+                "GLOBAL_LABEL": ""
+            },
+            {
+                "TAG_NUM": 2,
+                "COMPONENT_NUM": 6,
+                "COMPONENT_NAME": "piyo_class",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "DWORD",
+                "LENGTH": "",
+                "GLOBAL_LABEL": ""
+            },
+            {
+                "TAG_NUM": 2,
+                "COMPONENT_NUM": 7,
+                "COMPONENT_NAME": "piyo_in_flg",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "DWORD",
+                "LENGTH": "",
+                "GLOBAL_LABEL": ""
+            },
+            {
+                "TAG_NUM": 2,
+                "COMPONENT_NUM": 8,
+                "COMPONENT_NAME": "piyo_cycletime",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "DWORD",
+                "LENGTH": "",
+                "GLOBAL_LABEL": ""
+            },
+            {
+                "TAG_NUM": 2,
+                "COMPONENT_NUM": 9,
+                "COMPONENT_NAME": "piyo_out_flg",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "DWORD",
+                "LENGTH": "",
+                "GLOBAL_LABEL": ""
+            },
+            {
+                "TAG_NUM": 2,
+                "COMPONENT_NUM": 10,
+                "COMPONENT_NAME": "piyo_model_name",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "SJIS",
+                "LENGTH": 12,
+                "GLOBAL_LABEL": ""
+            }
+        ],
+        [
+            {
+                "TAG_NUM": 3,
+                "COMPONENT_NUM": 1,
+                "COMPONENT_NAME": "fuga_please",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "BIT",
+                "LENGTH": "",
+                "GLOBAL_LABEL": ""
+            },
+            {
+                "TAG_NUM": 3,
+                "COMPONENT_NUM": 2,
+                "COMPONENT_NAME": "fuga_send_ok",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "BIT",
+                "LENGTH": "",
+                "GLOBAL_LABEL": ""
+            },
+            {
+                "TAG_NUM": 3,
+                "COMPONENT_NUM": 3,
+                "COMPONENT_NAME": "fuga_send_ng",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "BIT",
+                "LENGTH": "",
+                "GLOBAL_LABEL": ""
+            },
+            {
+                "TAG_NUM": 3,
+                "COMPONENT_NUM": 4,
+                "COMPONENT_NAME": "fuga_id",
+                "TARGET_DEVICE_NUM": 1,
+                "DEVICE_MEMORY": "A1000",
+                "DATA_TYPE": "SJIS",
+                "LENGTH": 12,
+                "GLOBAL_LABEL": ""
+            }
+        ]
+    ],
+    "TARGET_SERVER": [
+        {
+            "TARGET_SERVER_NUM": 1,
+            "TARGET_SERVER_NAME": "hoge",
+            "COMMENT": "use hoge server",
+            "SERVER_TYPE": "DATABASE",
+            "ACCESS_TYPE": "VIA_SERVICE",
+            "IP_ADDRESS": "192.168.0.3",
+            "PORT_NUM": 5432,
+            "COMMUNICATION_TIMEOUT": "10",
+            "DB_ACCESS_TIMEOUT": "30",
+            "DATA_SOURCE_NAME": "hoge",
+            "USER_NAME": "",
+            "PASSWORD": "",
+            "DATABASE_TYPE": "POSTGRESQL",
+            "NOTIFY_ACCESS_ERROR": "ENABLE",
+            "NOTICE_DST": "TAG01-0001"
+        }
+    ],
+    "ACCCESS_TABLE": [
+        {
+            "ACCESS_TABLE_NUM": 1,
+            "ACCESS_TABLE_NAME": "tbl_hoge",
+            "COMMENT": "hoge登録",
+            "TARGET_SERVER_NUM": 1,
+            "TABLE_PROC_TYPE": "TABLE",
+            "DB_TABLE_NAME": "tbl_hoge"
+        },
+        {
+            "ACCESS_TABLE_NUM": 2,
+            "ACCESS_TABLE_NAME": "proc_piyo",
+            "COMMENT": "piyo実行",
+            "TARGET_SERVER_NUM": 2,
+            "TABLE_PROC_TYPE": "PROCEDURE",
+            "DB_TABLE_NAME": "proc_piyo"
+        },
+        {
+            "ACCESS_TABLE_NUM": 3,
+            "ACCESS_TABLE_NAME": "proc_fuga",
+            "COMMENT": "fuga実行",
+            "TARGET_SERVER_NUM": 2,
+            "TABLE_PROC_TYPE": "PROCEDURE",
+            "DB_TABLE_NAME": "proc_fuga"
+        }
+    ],
+    "ACCCESS_FIELD": [
+        [
+            {
+                "ACCESS_TABLE_NUM": 1,
+                "ACCESS_FIELD_NUM": 1,
+                "ACCESS_FIELD_NAME": "hoge_flg",
+                "DB_FIELD_NAME": "hoge_flg",
+                "DATA_TYPE": "INTEGER",
+                "PRECISION_HOLD": "DISABLE",
+                "DEFAULT_VALUE_SETTING": "DISABLE",
+                "DEFAULT_VALUE": "",
+                "DIRECTION": ""
+            },
+            {
+                "ACCESS_TABLE_NUM": 1,
+                "ACCESS_FIELD_NUM": 2,
+                "ACCESS_FIELD_NAME": "hoge_time",
+                "DB_FIELD_NAME": "hoge_time",
+                "DATA_TYPE": "DATETIME",
+                "PRECISION_HOLD": "DISABLE",
+                "DEFAULT_VALUE_SETTING": "DISABLE",
+                "DEFAULT_VALUE": "",
+                "DIRECTION": ""
+            },
+            {
+                "ACCESS_TABLE_NUM": 1,
+                "ACCESS_FIELD_NUM": 3,
+                "ACCESS_FIELD_NAME": "hoge_name",
+                "DB_FIELD_NAME": "hoge_name",
+                "DATA_TYPE": "CHAR",
+                "PRECISION_HOLD": "DISABLE",
+                "DEFAULT_VALUE_SETTING": "DISABLE",
+                "DEFAULT_VALUE": "",
+                "DIRECTION": ""
+            },
+            {
+                "ACCESS_TABLE_NUM": 1,
+                "ACCESS_FIELD_NUM": 4,
+                "ACCESS_FIELD_NAME": "hoge_id",
+                "DB_FIELD_NAME": "hoge_id",
+                "DATA_TYPE": "CHAR",
+                "PRECISION_HOLD": "DISABLE",
+                "DEFAULT_VALUE_SETTING": "DISABLE",
+                "DEFAULT_VALUE": "",
+                "DIRECTION": ""
+            },
+            {
+                "ACCESS_TABLE_NUM": 1,
+                "ACCESS_FIELD_NUM": 5,
+                "ACCESS_FIELD_NAME": "hoge_num",
+                "DB_FIELD_NAME": "hoge_num",
+                "DATA_TYPE": "INTEGER",
+                "PRECISION_HOLD": "DISABLE",
+                "DEFAULT_VALUE_SETTING": "DISABLE",
+                "DEFAULT_VALUE": "",
+                "DIRECTION": ""
+            }
+        ],
+        [
+            {
+                "ACCESS_TABLE_NUM": 2,
+                "ACCESS_FIELD_NUM": 1,
+                "ACCESS_FIELD_NAME": "piyo_name",
+                "DB_FIELD_NAME": "",
+                "DATA_TYPE": "CHAR",
+                "PRECISION_HOLD": "DISABLE",
+                "DEFAULT_VALUE_SETTING": "DISABLE",
+                "DEFAULT_VALUE": "",
+                "DIRECTION": "IN"
+            },
+            {
+                "ACCESS_TABLE_NUM": 2,
+                "ACCESS_FIELD_NUM": 2,
+                "ACCESS_FIELD_NAME": "piyo_id",
+                "DB_FIELD_NAME": "",
+                "DATA_TYPE": "CHAR",
+                "PRECISION_HOLD": "DISABLE",
+                "DEFAULT_VALUE_SETTING": "DISABLE",
+                "DEFAULT_VALUE": "",
+                "DIRECTION": "OUT"
+            }
+        ],
+        [
+            {
+                "ACCESS_TABLE_NUM": 3,
+                "ACCESS_FIELD_NUM": 1,
+                "ACCESS_FIELD_NAME": "fuga_name",
+                "DB_FIELD_NAME": "",
+                "DATA_TYPE": "CHAR",
+                "PRECISION_HOLD": "DISABLE",
+                "DEFAULT_VALUE_SETTING": "DISABLE",
+                "DEFAULT_VALUE": "",
+                "DIRECTION": "IN"
+            },
+            {
+                "ACCESS_TABLE_NUM": 3,
+                "ACCESS_FIELD_NUM": 2,
+                "ACCESS_FIELD_NAME": "fuga_id",
+                "DB_FIELD_NAME": "",
+                "DATA_TYPE": "CHAR",
+                "PRECISION_HOLD": "DISABLE",
+                "DEFAULT_VALUE_SETTING": "DISABLE",
+                "DEFAULT_VALUE": "",
+                "DIRECTION": "OUT"
+            }
+        ]
+    ],
+    "JOB": [
+        {
+            "JOB_NUM": 1,
+            "JOB_NAME": "hoge登録",
+            "COMMENT": "hogeのpiyoを登録",
+            "JOB_CONFIGURATION": "MAIN",
+            "PRE_ACTION_NUM": 0,
+            "POST_ACTION_NUM": 0,
+            "TRIGGER_CONFIGURATION": "SINGLE",
+            "TRIGGER_COMBINATION": "AND",
+            "TRIGGER_BUFFERING": "DISABLE",
+            "ACCESS_TYPE": "GENERAL",
+            "ACCESS_INTERVAL": 100,
+            "ACCESS_INTERVAL_UNIT": "MILLISECOND",
+            "READING_TARGET": "TRIGGER_DATA",
+            "PRE_FAIL_OPERATION": "",
+            "MAIN_FAIL_OPERATION": "POST_PROCESSING",
+            "MAIN_ABORT_OPERATION": "",
+            "DB_BUFFERING_SETTING": "DISABLE",
+            "DB_BUFFERING_OPERATION": "",
+            "WORKING_HISTORY": "DISABLE",
+            "DETAILED_LOG": "DISABLE",
+            "INHIBIT_OUTPUT_DEVICE": "DISABLE",
+            "INHIBIT_OUTPUT_SERVER": "DISABLE",
+            "INHIBIT_JOB_EXECUTION": "DISABLE",
+            "TRIGGER_CONDITION": [
+                {
+                    "TRIGGER_NUM": 1,
+                    "EVENT_CONDITION_TYPE": "HANDSHAKE",
+                    "DETAIL_TYPE": "",
+                    "MONITORING_TARGET": "",
+                    "CONDITION": "",
+                    "COMPARISON_TARGET": "",
+                    "MONTH": "",
+                    "DAY": "",
+                    "WEEK": "",
+                    "MON-SUN": "",
+                    "START_TIME": "",
+                    "END_TIME": "",
+                    "TIMER_INTERVAL": "",
+                    "TIME_INTERVAL": "",
+                    "TIME_INTERVAL_UNIT": "",
+                    "REFERENCE_TIME": "",
+                    "MESIF_MODULE_STARTUP": "",
+                    "MESIF_FUNC_RESTART": "",
+                    "CONTROL_CPU_STATUS": "",
+                    "REQUEST_SRC": "TAG02-0001",
+                    "NOTICE_DST": "TAG02-0002",
+                    "REQUEST_SRC2": "",
+                    "NOTICE_DST2": ""
+                }
+            ],
+            "JOB_NOTICE": [
+                {
+                    "NOTICE_TYPE": "PRE_FAIL1",
+                    "NOTICE_SETTING": "DISABLE",
+                    "NOTICE_DST": "",
+                    "NOTICE_DATA": ""
+                },
+                {
+                    "NOTICE_TYPE": "PRE_FAIL2",
+                    "NOTICE_SETTING": "DISABLE",
+                    "NOTICE_DST": "",
+                    "NOTICE_DATA": ""
+                },
+                {
+                    "NOTICE_TYPE": "MAIN_FAIL1",
+                    "NOTICE_SETTING": "ENABLE",
+                    "NOTICE_DST": "TAG02-0003",
+                    "NOTICE_DATA": "[INT]1"
+                },
+                {
+                    "NOTICE_TYPE": "MAIN_FAIL2",
+                    "NOTICE_SETTING": "ENABLE",
+                    "NOTICE_DST": "",
+                    "NOTICE_DATA": ""
+                },
+                {
+                    "NOTICE_TYPE": "POST_FAIL1",
+                    "NOTICE_SETTING": "DISABLE",
+                    "NOTICE_DST": "",
+                    "NOTICE_DATA": ""
+                },
+                {
+                    "NOTICE_TYPE": "POST_FAIL2",
+                    "NOTICE_SETTING": "DISABLE",
+                    "NOTICE_DST": "",
+                    "NOTICE_DATA": ""
+                },
+                {
+                    "NOTICE_TYPE": "DB_BUFFERING",
+                    "NOTICE_SETTING": "DISABLE",
+                    "NOTICE_DST": "",
+                    "NOTICE_DATA": ""
+                }
+            ],
+            "ACTION": [
+                {
+                    "ACTION_NUM": 1,
+                    "DB_COMMUNICATION": [
+                        {
+                            "DB_COMMUNICATION_TYPE": "INSERT",
+                            "ACCESS_TABLE_NUM": 1,
+                            "RECORD_NUM_NOTICE": "DISABLE",
+                            "RECORD_NUM_DST": "",
+                            "SELECTED_RECORD_NUM_DST": "",
+                            "SET_MAX_RECORD_NUM": "",
+                            "MAX_RECORD_NUM": "",
+                            "M-SELECT_ZERO_CLEAR": "",
+                            "SET_DEFAULT_VALUE": "",
+                            "RETURN_VALUE_NOTICE": "",
+                            "RETURN_VALUE_DST": "",
+                            "NO_RECORD_OPERATION": "",
+                            "NO_RECORD_NOTICE": "",
+                            "NO_RECORD_NOTICE_DST": "",
+                            "NO_RECORD_NOTICE_DATA": "",
+                            "NO_RECORD_ZERO_CLEAR": "",
+                            "M-RECORDS_OPERATION": "",
+                            "M-RECORDS_NOTICE": "",
+                            "M-RECORDS_NOTICE_DST": "",
+                            "M-RECORDS_NOTICE_DATA": "",
+                            "OVERFLOW_OPERATION": "",
+                            "OVERFLOW_NOTICE": "",
+                            "OVERFLOW_NOTICE_DST": "",
+                            "OVERFLOW_NOTICE_DATA": "",
+                            "SELECT_FROM_FIRST": "",
+                            "INSERT_NEW_RECORD": ""
+                        }
+                    ],
+                    "DB_NARROWING_DOWN": [
+                        {
+                            "NARROWING_DOWN_NUM": 1,
+                            "COMBINATION": "NONE",
+                            "ACCESS_FIELD_NUM": 1,
+                            "CONDITION": "EQUAL",
+                            "COMPARISON_TARGET": "TAG03-0004"
+                        }
+                    ],
+                    "DB_SORTING_ORDER": [
+                        {
+                            "SORTING_ORDER_NUM": 1,
+                            "ACCESS_FIELD_NUM": 1,
+                            "ORDER": "DESC"
+                        }
+                    ],
+                    "DB_ASSIGNMENT": [
+                        {
+                            "ASSIGNMENT_NUM": 1,
+                            "ACCESS_FIELD_NUM": 1,
+                            "ASSIGNMENT_DATA": "[INT]0"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 2,
+                            "ACCESS_FIELD_NUM": 2,
+                            "ASSIGNMENT_DATA": "SERVER_DATETIME"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 3,
+                            "ACCESS_FIELD_NUM": 3,
+                            "ASSIGNMENT_DATA": "[STRING]hoge"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 4,
+                            "ACCESS_FIELD_NUM": 4,
+                            "ASSIGNMENT_DATA": "[STRING]6"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 5,
+                            "ACCESS_FIELD_NUM": 5,
+                            "ASSIGNMENT_DATA": "[INT]1"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 6,
+                            "ACCESS_FIELD_NUM": 6,
+                            "ASSIGNMENT_DATA": "[INT]1"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 7,
+                            "ACCESS_FIELD_NUM": 7,
+                            "ASSIGNMENT_DATA": "TAG02-0004"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 8,
+                            "ACCESS_FIELD_NUM": 8,
+                            "ASSIGNMENT_DATA": "TAG02-0005"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 9,
+                            "ACCESS_FIELD_NUM": 9,
+                            "ASSIGNMENT_DATA": "TAG02-0006"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 10,
+                            "ACCESS_FIELD_NUM": 10,
+                            "ASSIGNMENT_DATA": "TAG02-0007"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 11,
+                            "ACCESS_FIELD_NUM": 11,
+                            "ASSIGNMENT_DATA": "TAG02-0008"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 12,
+                            "ACCESS_FIELD_NUM": 12,
+                            "ASSIGNMENT_DATA": "TAG02-0009"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 13,
+                            "ACCESS_FIELD_NUM": 13,
+                            "ASSIGNMENT_DATA": "TAG02-0010"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "JOB_NUM": 2,
+            "JOB_NAME": "piyo取得",
+            "COMMENT": "hogeのpiyoを取得",
+            "JOB_CONFIGURATION": "MAIN",
+            "PRE_ACTION_NUM": 0,
+            "POST_ACTION_NUM": 0,
+            "TRIGGER_CONFIGURATION": "SINGLE",
+            "TRIGGER_COMBINATION": "AND",
+            "TRIGGER_BUFFERING": "DISABLE",
+            "ACCESS_TYPE": "GENERAL",
+            "ACCESS_INTERVAL": 1,
+            "ACCESS_INTERVAL_UNIT": "SECOND",
+            "READING_TARGET": "TRIGGER_DATA",
+            "PRE_FAIL_OPERATION": "",
+            "MAIN_FAIL_OPERATION": "POST_PROCESSING",
+            "MAIN_ABORT_OPERATION": "",
+            "DB_BUFFERING_SETTING": "DISABLE",
+            "DB_BUFFERING_OPERATION": "",
+            "WORKING_HISTORY": "DISABLE",
+            "DETAILED_LOG": "DISABLE",
+            "INHIBIT_OUTPUT_DEVICE": "DISABLE",
+            "INHIBIT_OUTPUT_SERVER": "DISABLE",
+            "INHIBIT_JOB_EXECUTION": "DISABLE",
+            "TRIGGER_CONDITION": [
+                {
+                    "TRIGGER_NUM": 1,
+                    "EVENT_CONDITION_TYPE": "HANDSHAKE",
+                    "DETAIL_TYPE": "",
+                    "MONITORING_TARGET": "",
+                    "CONDITION": "",
+                    "COMPARISON_TARGET": "",
+                    "MONTH": "",
+                    "DAY": "",
+                    "WEEK": "",
+                    "MON-SUN": "",
+                    "START_TIME": "",
+                    "END_TIME": "",
+                    "TIMER_INTERVAL": "",
+                    "TIME_INTERVAL": "",
+                    "TIME_INTERVAL_UNIT": "",
+                    "REFERENCE_TIME": "",
+                    "MESIF_MODULE_STARTUP": "",
+                    "MESIF_FUNC_RESTART": "",
+                    "CONTROL_CPU_STATUS": "",
+                    "REQUEST_SRC": "TAG03-0001",
+                    "NOTICE_DST": "TAG03-0002",
+                    "REQUEST_SRC2": "",
+                    "NOTICE_DST2": ""
+                }
+            ],
+            "JOB_NOTICE": [
+                {
+                    "NOTICE_TYPE": "PRE_FAIL1",
+                    "NOTICE_SETTING": "DISABLE",
+                    "NOTICE_DST": "",
+                    "NOTICE_DATA": ""
+                },
+                {
+                    "NOTICE_TYPE": "PRE_FAIL2",
+                    "NOTICE_SETTING": "DISABLE",
+                    "NOTICE_DST": "",
+                    "NOTICE_DATA": ""
+                },
+                {
+                    "NOTICE_TYPE": "MAIN_FAIL1",
+                    "NOTICE_SETTING": "ENABLE",
+                    "NOTICE_DST": "TAG03-0003",
+                    "NOTICE_DATA": "[INT]1"
+                },
+                {
+                    "NOTICE_TYPE": "MAIN_FAIL2",
+                    "NOTICE_SETTING": "ENABLE",
+                    "NOTICE_DST": "",
+                    "NOTICE_DATA": ""
+                },
+                {
+                    "NOTICE_TYPE": "POST_FAIL1",
+                    "NOTICE_SETTING": "DISABLE",
+                    "NOTICE_DST": "",
+                    "NOTICE_DATA": ""
+                },
+                {
+                    "NOTICE_TYPE": "POST_FAIL2",
+                    "NOTICE_SETTING": "DISABLE",
+                    "NOTICE_DST": "",
+                    "NOTICE_DATA": ""
+                },
+                {
+                    "NOTICE_TYPE": "DB_BUFFERING",
+                    "NOTICE_SETTING": "DISABLE",
+                    "NOTICE_DST": "",
+                    "NOTICE_DATA": ""
+                }
+            ],
+            "ACTION": [
+                {
+                    "ACTION_NUM": 1,
+                    "DB_COMMUNICATION": [
+                        {
+                            "DB_COMMUNICATION_TYPE": "STORED_PROCEDURE",
+                            "ACCESS_TABLE_NUM": 2,
+                            "RECORD_NUM_NOTICE": "",
+                            "RECORD_NUM_DST": "",
+                            "SELECTED_RECORD_NUM_DST": "",
+                            "SET_MAX_RECORD_NUM": "",
+                            "MAX_RECORD_NUM": "",
+                            "M-SELECT_ZERO_CLEAR": "",
+                            "SET_DEFAULT_VALUE": "",
+                            "RETURN_VALUE_NOTICE": "DISABLE",
+                            "RETURN_VALUE_DST": "",
+                            "NO_RECORD_OPERATION": "",
+                            "NO_RECORD_NOTICE": "",
+                            "NO_RECORD_NOTICE_DST": "",
+                            "NO_RECORD_NOTICE_DATA": "",
+                            "NO_RECORD_ZERO_CLEAR": "",
+                            "M-RECORDS_OPERATION": "",
+                            "M-RECORDS_NOTICE": "",
+                            "M-RECORDS_NOTICE_DST": "",
+                            "M-RECORDS_NOTICE_DATA": "",
+                            "OVERFLOW_OPERATION": "",
+                            "OVERFLOW_NOTICE": "",
+                            "OVERFLOW_NOTICE_DST": "",
+                            "OVERFLOW_NOTICE_DATA": "",
+                            "SELECT_FROM_FIRST": "",
+                            "INSERT_NEW_RECORD": ""
+                        }
+                    ],
+                    "DB_NARROWING_DOWN": [],
+                    "DB_SORTING_ORDER": [],
+                    "DB_ASSIGNMENT": [
+                        {
+                            "ASSIGNMENT_NUM": 1,
+                            "ACCESS_FIELD_NUM": 1,
+                            "ASSIGNMENT_DATA": "TAG03-0004"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 2,
+                            "ACCESS_FIELD_NUM": 2,
+                            "ASSIGNMENT_DATA": "TAG03-0005"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 3,
+                            "ACCESS_FIELD_NUM": 3,
+                            "ASSIGNMENT_DATA": "TAG03-0006"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 4,
+                            "ACCESS_FIELD_NUM": 4,
+                            "ASSIGNMENT_DATA": "TAG03-0007"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 5,
+                            "ACCESS_FIELD_NUM": 5,
+                            "ASSIGNMENT_DATA": "TAG03-0008"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 6,
+                            "ACCESS_FIELD_NUM": 6,
+                            "ASSIGNMENT_DATA": "TAG03-0009"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 7,
+                            "ACCESS_FIELD_NUM": 7,
+                            "ASSIGNMENT_DATA": "TAG03-0010"
+                        }
+                    ]
+                },
+                {
+                    "ACTION_NUM": 2,
+                    "DB_COMMUNICATION": [
+                        {
+                            "DB_COMMUNICATION_TYPE": "STORED_PROCEDURE",
+                            "ACCESS_TABLE_NUM": 3,
+                            "RECORD_NUM_NOTICE": "",
+                            "RECORD_NUM_DST": "",
+                            "SELECTED_RECORD_NUM_DST": "",
+                            "SET_MAX_RECORD_NUM": "",
+                            "MAX_RECORD_NUM": "",
+                            "M-SELECT_ZERO_CLEAR": "",
+                            "SET_DEFAULT_VALUE": "",
+                            "RETURN_VALUE_NOTICE": "DISABLE",
+                            "RETURN_VALUE_DST": "",
+                            "NO_RECORD_OPERATION": "",
+                            "NO_RECORD_NOTICE": "",
+                            "NO_RECORD_NOTICE_DST": "",
+                            "NO_RECORD_NOTICE_DATA": "",
+                            "NO_RECORD_ZERO_CLEAR": "",
+                            "M-RECORDS_OPERATION": "",
+                            "M-RECORDS_NOTICE": "",
+                            "M-RECORDS_NOTICE_DST": "",
+                            "M-RECORDS_NOTICE_DATA": "",
+                            "OVERFLOW_OPERATION": "",
+                            "OVERFLOW_NOTICE": "",
+                            "OVERFLOW_NOTICE_DST": "",
+                            "OVERFLOW_NOTICE_DATA": "",
+                            "SELECT_FROM_FIRST": "",
+                            "INSERT_NEW_RECORD": ""
+                        }
+                    ],
+                    "DB_NARROWING_DOWN": [],
+                    "DB_SORTING_ORDER": [],
+                    "DB_ASSIGNMENT": [
+                        {
+                            "ASSIGNMENT_NUM": 1,
+                            "ACCESS_FIELD_NUM": 1,
+                            "ASSIGNMENT_DATA": "TAG03-0004"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 2,
+                            "ACCESS_FIELD_NUM": 2,
+                            "ASSIGNMENT_DATA": "TAG03-0005"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 3,
+                            "ACCESS_FIELD_NUM": 3,
+                            "ASSIGNMENT_DATA": "TAG03-0086"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 4,
+                            "ACCESS_FIELD_NUM": 4,
+                            "ASSIGNMENT_DATA": "TAG03-0087"
+                        },
+                        {
+                            "ASSIGNMENT_NUM": 5,
+                            "ACCESS_FIELD_NUM": 5,
+                            "ASSIGNMENT_DATA": "TAG03-0088"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "DB_BUFFER": [
+        {
+            "DB_BUFFER_NUM": 1,
+            "USE_DB_BUFFER": "DISABLE",
+            "DB_BUFFER_NAME": "",
+            "DB_BUFFER_SIZE": "",
+            "RESEND_AUTO": "",
+            "OPERATION_RECOVERY": "",
+            "RESEND_REQUEST": "",
+            "CLEAR_REQUEST": "",
+            "STATUS_NOTICE_DST": "",
+            "NUM_NOTICE_DST": "",
+            "FULL_NOTICE_DST": "",
+            "USE_RATE_NOTICE_DST": ""
+        },
+        {
+            "DB_BUFFER_NUM": 2,
+            "USE_DB_BUFFER": "DISABLE",
+            "DB_BUFFER_NAME": "",
+            "DB_BUFFER_SIZE": "",
+            "RESEND_AUTO": "",
+            "OPERATION_RECOVERY": "",
+            "RESEND_REQUEST": "",
+            "CLEAR_REQUEST": "",
+            "STATUS_NOTICE_DST": "",
+            "NUM_NOTICE_DST": "",
+            "FULL_NOTICE_DST": "",
+            "USE_RATE_NOTICE_DST": ""
+        }
+    ],
+    "DOT_MATRIX_LED": [
+        {
+            "DEFAULT_MODE": "USR",
+            "SWITCH_FORCIBLY": "ENABLE",
+            "HIGHLIGHT_DISPLAY": "ENABLE"
+        }
+    ],
+    "GLOBAL_VARIABLE": [
+        {
+            "VARIABLE_NUM": 1,
+            "VARIABLE_NAME": "hoge",
+            "COMMENT": "",
+            "DATA_TYPE": "SINGLE",
+            "LENGTH": ""
+        }
+    ],
+    "LOCAL_VARIABLE": [
+        {
+            "VARIABLE_NUM": 1,
+            "VARIABLE_NAME": "piyo",
+            "COMMENT": "",
+            "DATA_TYPE": "SINGLE",
+            "LENGTH": ""
+        },
+        {
+            "VARIABLE_NUM": 2,
+            "VARIABLE_NAME": "fuga",
+            "COMMENT": "",
+            "DATA_TYPE": "BIT",
+            "LENGTH": ""
+        }
+    ],
+    "SECURITY": [
+        {
+            "USE_USER_AUTH": "ENABLE"
+        }
+    ],
+    "USER": [
+        {
+            "ACCOUNT_NUM": 1,
+            "USER_NAME": "hoge",
+            "PASSWORD": "piyo"
+        }
+    ]
+}

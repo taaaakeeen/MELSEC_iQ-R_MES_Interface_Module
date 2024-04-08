@@ -1,0 +1,4 @@
+﻿ACCESS TABLE NO,ACCESS TABLE NAME,COMMENT,TARGET SERVER NO,TABLE PROC TYPE,DB TABLE NAME
+1,tbl_hoge,hoge登録,1,TABLE,tbl_hoge
+2,proc_piyo,piyo実行,2,PROCEDURE,proc_piyo
+3,proc_fuga,fuga実行,2,PROCEDURE,proc_fuga
