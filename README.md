@@ -1,6 +1,6 @@
 # MELSEC iQ-R MES Interface Module
 
-仕様を理解してトラブル時のデバッグ/工数削減ツール作成を目指す
+仕様を理解してトラブル時のデバッグ/工数削減ツール作成を目指します
 
 # 目次
 1. 機能
@@ -14,6 +14,7 @@
     - ファイル構成
     - プロジェクト構造
 3. mes_parser
+    - 使い方
     - JSON仕様
     - CSV -> JSON
         - PROJECT.CSV
@@ -37,8 +38,7 @@
         - SECURITY.CSV
         - DOT_MATRIX_LED.CSV
         - USER.CSV
-    - 使い方
-
+    
 # 1. 機能
 
 MESインタフェースユニットの機能詳細について説明します。
@@ -129,8 +129,9 @@ MESインタフェースユニットは，情報連携機能がジョブ設定�
 MESインタフェースユニットの各ステータス，稼動ログの確認や，MESインタフェースユニットの停止，再開の各種操作を行うことができます。
 情報連携機能設定ツールは，MESインタフェースユニット1台分の情報連携機能の設定を1つのプロジェクトとして扱います。
 
-[MELSEC iQ-R MESインタフェースユニットユーザーズマニュアル(スタートアップ編).pdf](https://github.com/taaaakeeen/MELSEC_iQ-R_MES_Interface_Module/blob/main/doc/MELSEC%20iQ-R%20MES%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB(%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E7%B7%A8).pdf)
-[MELSEC iQ-R MESインタフェースユニットユーザーズマニュアル(応用編).pdf](https://github.com/taaaakeeen/MELSEC_iQ-R_MES_Interface_Module/blob/main/doc/MELSEC%20iQ-R%20MES%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB(%E5%BF%9C%E7%94%A8%E7%B7%A8).pdf)
+- [MELSEC iQ-R MESインタフェースユニットユーザーズマニュアル(スタートアップ編).pdf](https://github.com/taaaakeeen/MELSEC_iQ-R_MES_Interface_Module/blob/main/doc/MELSEC%20iQ-R%20MES%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB(%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E7%B7%A8).pdf)
+
+- [MELSEC iQ-R MESインタフェースユニットユーザーズマニュアル(応用編).pdf](https://github.com/taaaakeeen/MELSEC_iQ-R_MES_Interface_Module/blob/main/doc/MELSEC%20iQ-R%20MES%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB(%E5%BF%9C%E7%94%A8%E7%B7%A8).pdf)
 
 ## ファイル構成
 以下のCSVファイルによって設定が構成されています
@@ -201,6 +202,56 @@ CSVのプロジェクトファイルをJSONに変換出力します。
 トラブル等でMES側の設定を確認したい状況での使用を想定しています。
 
 [mes_parser.exe](https://github.com/taaaakeeen/MELSEC_iQ-R_MES_Interface_Module/blob/main/dist/mes_parser.exe)
+
+## 使い方
+
+1. mes_parser.exeを実行
+
+<img src="data\img\2024-04-08 162559.png">
+
+2. GUIが起動します
+
+<img src="data\img\2024-04-08 163639.png">
+
+3. フォルダ選択でプロジェクトフォルダを選択します
+
+<img src="data\img\2024-04-08 164001.png">
+
+4. 選択したフォルダのパスがテキストボックスに入力されます ※ダイアログを使用せずに直接入力でもOK
+
+<img src="data\img\2024-04-08 164052.png">
+
+5. JSON出力ボタンを押すと実行確認のモーダルが表示されます
+
+<img src="data\img\2024-04-08 164528.png">
+
+6. 処理が完了すると処理完了のモーダルが表示されます
+
+<img src="data\img\2024-04-08 164728.png">
+
+### 出力ファイルの確認
+
+1. mes_parser.exeと同じ階層にoutputフォルダが作成されます
+
+<img src="data\img\2024-04-08 165314.png">
+
+2. outputフォルダにプロジェクトフォルダ名のJSONが出力されます
+
+<img src="data\img\2024-04-08 165650.png">
+
+### 変換失敗
+
+1. 処理中にエラーが発生すると変換失敗のモーダルが表示されます
+
+<img src="data\img\2024-04-08 170007.png">
+
+2. mes_parser.exeと同じ階層にmes_parser.logが作成されます
+
+<img src="data\img\2024-04-08 170311.png">
+
+3. エラー内容を確認できます
+
+<img src="data\img\2024-04-08 170623.png">
 
 ## JSON仕様
 以下のKey構造で構成されています
@@ -589,53 +640,3 @@ JSONの各KeyはCSVのファイル名になっています
 ## USER.CSV
 
 <img src="data\img\2024-04-08 154202.png">
-
-## 使い方
-
-1. mes_parser.exeを実行
-
-<img src="data\img\2024-04-08 162559.png">
-
-2. GUIが起動します
-
-<img src="data\img\2024-04-08 163639.png">
-
-3. フォルダ選択でプロジェクトフォルダを選択します
-
-<img src="data\img\2024-04-08 164001.png">
-
-4. 選択したフォルダのパスがテキストボックスに入力されます ※ダイアログを使用せずに直接入力でもOK
-
-<img src="data\img\2024-04-08 164052.png">
-
-5. JSON出力ボタンを押すと実行確認のモーダルが表示されます
-
-<img src="data\img\2024-04-08 164528.png">
-
-6. 処理が完了すると処理完了のモーダルが表示されます
-
-<img src="data\img\2024-04-08 164728.png">
-
-### 出力ファイルの確認
-
-1. mes_parser.exeと同じ階層にoutputフォルダが作成されます
-
-<img src="data\img\2024-04-08 165314.png">
-
-2. outputフォルダにプロジェクトフォルダ名のJSONが出力されます
-
-<img src="data\img\2024-04-08 165650.png">
-
-### 変換失敗
-
-1. 処理中にエラーが発生すると変換失敗のモーダルが表示されます
-
-<img src="data\img\2024-04-08 170007.png">
-
-2. mes_parser.exeと同じ階層にmes_parser.logが作成されます
-
-<img src="data\img\2024-04-08 170311.png">
-
-3. エラー内容を確認できます
-
-<img src="data\img\2024-04-08 170623.png">
